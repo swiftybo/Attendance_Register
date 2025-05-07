@@ -9,3 +9,13 @@ let register = [
   { firstName: "Emily", lastName: "Chives", yearOfBirth: 1955 },
   { firstName: "Steven", lastName: "Row-Fern", yearOfBirth: 1988 },
 ];
+
+let inputtedName = document.querySelector(".input").value;
+
+document.querySelector(".btn").addEventListener("click", function () {
+  if (register.includes(inputtedName)) {
+    console.log("name is is in the register");
+  } else {
+    console.log("not logged in register");
+  }
+});
