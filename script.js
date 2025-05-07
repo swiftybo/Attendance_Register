@@ -10,7 +10,7 @@ let register = [
   { firstName: "Steven", lastName: "Row-Fern", yearOfBirth: 1988 },
 ];
 
-document.querySelector(".btn").addEventListener("click", function () {
+document.querySelector(".check").addEventListener("click", function () {
   let inputtedFirstName = document.querySelector(".firstName").value;
   let inputtedLastName = document.querySelector(".lastName").value;
 
@@ -33,4 +33,17 @@ document.querySelector(".btn").addEventListener("click", function () {
   }
 });
 
-document.querySelector("");
+document.querySelector(".add").addEventListener("click", function () {
+  let newFirstName = document.querySelector(".firstNameAdd").value;
+  let newLastName = document.querySelector(".lastNameAdd").value;
+  let newYearOfBirth = document.querySelector(".birthYearNameAdd").value;
+
+  const newObject = {
+    firstName: newFirstName,
+    lastName: newLastName,
+    yearOfBirth: newYearOfBirth,
+  };
+
+  register.push(newObject);
+  console.log(register);
+});
