@@ -11,10 +11,14 @@ let register = [
 ];
 
 document.querySelector(".btn").addEventListener("click", function () {
-  let inputtedName = document.querySelector(".input").value;
+  let inputtedFirstName = document.querySelector(".firstName").value;
+  let inputtedLastName = document.querySelector(".lastName").value;
 
   for (let i = 0; i < register.length; i++) {
-    if (inputtedName === register[i].firstName) {
+    if (
+      inputtedFirstName === register[i].firstName &&
+      inputtedLastName === register[i].lastName
+    ) {
       console.log("Name is is in the register");
       document.querySelector(".message").textContent =
         "You are now registered!";
@@ -27,10 +31,6 @@ document.querySelector(".btn").addEventListener("click", function () {
       document.querySelector(".message").style.color = "#de0a26";
     }
   }
-
-  //     if (register.includes({`firstName: ${inputtedName}`})) {
-  //     console.log("name is is in the register");
-  //   } else {
-  //     console.log("not logged in register");
-  //   }
 });
+
+document.querySelector("");

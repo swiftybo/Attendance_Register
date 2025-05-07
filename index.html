@@ -12,13 +12,46 @@
       <h1>Attendance Register</h1>
       <section class="main-container">
         <div class="left-container">
-          <div class="prompt">Enter your name below to register:</div>
-          <input type="text" class="input" />
+          <div style="margin-bottom: 8px" class="prompt">
+            Enter your details below to register:
+          </div>
+          <section class="entry-container">
+            <div class="prompt">First Name:</div>
+            <input type="text" class="input firstName" />
+          </section>
+          <section class="entry-container">
+            <div class="prompt">Last Name:</div>
+            <input type="text" class="input lastName" />
+          </section>
           <button class="btn check">Register</button>
         </div>
         <div class="right-container">
           <p class="message">Awaiting input...</p>
         </div>
+      </section>
+    </div>
+    <div class="form">
+      <h1>New Guest Form</h1>
+      <section class="main-container2">
+        <div style="text-align: center; padding-bottom: 15px">
+          Please enter the following details to be added to the attendee list.
+          (You will still need to register afterwards)
+        </div>
+        <section style="justify-content: space-around" class="entry-container">
+          <section class="entry-container">
+            <div class="prompt">First Name:</div>
+            <input style="margin: 5px" type="text" class="input firstName" />
+          </section>
+          <section class="entry-container">
+            <div class="prompt">Last Name:</div>
+            <input style="margin: 5px" type="text" class="input firstName" />
+          </section>
+          <section class="entry-container">
+            <div class="prompt">Year of Birth:</div>
+            <input style="margin: 5px" type="text" class="input firstName" />
+          </section>
+        </section>
+        <button style="margin-top: 15px" class="btn">Add to List</button>
       </section>
     </div>
     <script src="script.js"></script>
