@@ -10,16 +10,21 @@ let register = [
   { firstName: "Steven", lastName: "Row-Fern", yearOfBirth: 1988 },
 ];
 
-let inputtedName = document.querySelector(".input").value;
-
 document.querySelector(".btn").addEventListener("click", function () {
   let inputtedName = document.querySelector(".input").value;
 
-  console.log(inputtedName, typeof inputtedName);
   for (let i = 0; i < register.length; i++) {
     if (inputtedName === register[i].firstName) {
       console.log("Name is is in the register");
+      document.querySelector(".message").textContent =
+        "You are now registered!";
+      document.querySelector(".message").style.color = "#60b347";
+      break;
     } else {
+      console.log("Not included in the attendees list");
+      document.querySelector(".message").textContent =
+        "You are not part of the invite list.";
+      document.querySelector(".message").style.color = "#de0a26";
     }
   }
 
