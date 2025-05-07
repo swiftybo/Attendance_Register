@@ -13,9 +13,19 @@ let register = [
 let inputtedName = document.querySelector(".input").value;
 
 document.querySelector(".btn").addEventListener("click", function () {
-  if (register.includes(inputtedName)) {
-    console.log("name is is in the register");
-  } else {
-    console.log("not logged in register");
+  let inputtedName = document.querySelector(".input").value;
+
+  console.log(inputtedName, typeof inputtedName);
+  for (let i = 0; i < register.length; i++) {
+    if (inputtedName === register[i].firstName) {
+      console.log("Name is is in the register");
+    } else {
+    }
   }
+
+  //     if (register.includes({`firstName: ${inputtedName}`})) {
+  //     console.log("name is is in the register");
+  //   } else {
+  //     console.log("not logged in register");
+  //   }
 });
