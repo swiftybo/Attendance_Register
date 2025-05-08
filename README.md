@@ -11,6 +11,8 @@ PRINCIPLES PRACTICED:
 
 Welcome to the Attendance Register! This is an application which asks the user to input their full name (case sensitive). The inputted name is checked against a pre-defined list of names and will return if they have been successfully registered (meaning they are included on the 'invite/attendee list') or if they are not included, will notify them they are not invited and display a new form asking them to input their details to add them to the list.
 
+08-05-205: there is a bug where the New Guest Form still opens up even if the user is successfully registered & part of the invite list.
+
 INITIAL IDEA / PLAN:
 This is the attendance register. The concept behind this is that users will be able to log their attendance against a pre-defined list of attendees, captured in am object.
 A simple UI will be created with html & css. js will be used for DOM manipulation & event handling. The programme will check the inputted name against the pre-defined attendees
