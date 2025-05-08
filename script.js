@@ -13,8 +13,6 @@ let register = [
 document.querySelector(".check").addEventListener("click", function () {
   let inputtedFirstName = document.querySelector(".firstName").value;
   let inputtedLastName = document.querySelector(".lastName").value;
-  console.log(inputtedFirstName);
-  console.log(inputtedLastName);
 
   for (let i = 0; i < register.length; i++) {
     if (
