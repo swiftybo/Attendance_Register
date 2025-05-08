@@ -13,6 +13,8 @@ let register = [
 document.querySelector(".check").addEventListener("click", function () {
   let inputtedFirstName = document.querySelector(".firstName").value;
   let inputtedLastName = document.querySelector(".lastName").value;
+  console.log(inputtedFirstName);
+  console.log(inputtedLastName);
 
   for (let i = 0; i < register.length; i++) {
     if (
@@ -23,6 +25,11 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".message").textContent =
         "You are now registered!";
       document.querySelector(".message").style.color = "#60b347";
+      break;
+    } else if (inputtedFirstName == "" || inputtedLastName == "") {
+      document.querySelector(".message").textContent =
+        "Please fill in all the fields.";
+      document.querySelector(".message").style.color = "#D16002";
       break;
     } else {
       console.log("Not included in the attendees list");
@@ -47,4 +54,5 @@ document.querySelector(".add").addEventListener("click", function () {
 
   register.push(newObject);
   console.log(register);
+  document.querySelector(".hidden").style.display = "none";
 });
