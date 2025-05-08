@@ -16,8 +16,8 @@ document.querySelector(".check").addEventListener("click", function () {
 
   for (let i = 0; i < register.length; i++) {
     if (
-      inputtedFirstName === register[i].firstName &&
-      inputtedLastName === register[i].lastName
+      inputtedFirstName == register[i].firstName &&
+      inputtedLastName == register[i].lastName
     ) {
       console.log("Name is is in the register");
       document.querySelector(".message").textContent =
@@ -29,6 +29,7 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".message").textContent =
         "You are not part of the invite list.";
       document.querySelector(".message").style.color = "#de0a26";
+      document.querySelector(".hidden").style.display = "inline";
     }
   }
 });

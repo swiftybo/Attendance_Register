@@ -68,3 +68,7 @@ h1 {
   align-items: center;
   padding-left: 8px;
 }
+
+.hidden {
+  display: none;
+}
